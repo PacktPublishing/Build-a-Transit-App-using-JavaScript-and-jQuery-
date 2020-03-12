@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BART</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bart.css" type="text/css" rel="stylesheet" />
+        <script src="key.js"></script>
+        <script src="stations.js"></script>
+    </head>
+    <body>
+        <div data-role="page">
+	       <div data-role="header" id="header">BART Train Departures</div>
+	       <div role="main" class="ui-content">
+               <form>
+                <div class="ui-field-contain">
+                    <label for="select-native-2">Station:</label>
+                    <select name="select-native-2" id="select-native-2" ></select>
+                </div>
+                </form>
+               <ul data-role="list-view" id="trains"></ul>
+            </div>
+	       <div data-role="footer" id="footer">&copy; 2020 | Framework Television</div>
+            <script src="bart.js"></script>
+        </div>
+    </body>
+</html>
